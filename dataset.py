@@ -2,7 +2,8 @@ import pandas as pd
 
 def load_data():
     data = {
-        "Employee Name": ["Ravi", "Jake", "Amira", "Tony", "Neha"],
+        "Employee Name": ["Rupesh", "Jake", "Amira", "Tony", "Neha",
+                          "Sam", "Aisha", "Carlos", "Priya", "Zane"],
         "Review": [
             "The BOXING session was Lit! 🥊🔥 Coach really pushed us hard. Loved it!",
             "Cricket nets need maintenance. The turf is uneven and risky 😕",
@@ -19,7 +20,6 @@ def load_data():
     df = pd.DataFrame(data)
     return df
 
-# Test run only when this file is executed directly
 if __name__ == "__main__":
     df = load_data()
     print(df)
